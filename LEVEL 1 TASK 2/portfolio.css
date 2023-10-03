@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 40px;
+    width: 100%;
+
+}
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+    color: rgb(77, 76, 75);
+    
+}
+
+@media only screen and (min-width:100px) and (max-width:350px) {
+    .navbar {
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-evenly;
+        background:linear-gradient(#eee9e9,#bfbfbfe3);
+        text-align: center;       
+    }
+    .menu{
+        padding: 5px 0px;
+    }
+    .name-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .name-logo h2 {
+        margin: auto;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+    .name-logo p{
+        font-size: 0.5rem;
+        opacity: 0.75;
+
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background:linear-gradient(#eee9e9,#bfbfbfe3);
+        font-family: 'Playfair Display', serif;
+        
+    }
+    .hire-button{
+        padding: 5px 5px ;
+        text-decoration: none;
+        background-color:rgb(128, 108, 99) ;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-family:ubuntu;
+        color: white;
+        font-family: 'Playfair Display', serif;
+        
+    }
+    .hire-button:hover{
+        cursor: pointer;
+        background-color: rgb(7, 10, 12);
+    }
+}
+
+@media only screen and (min-width:351px)  {
+    .navbar {
+        height: 40px;
+        background:linear-gradient(#eee9e9,#bfbfbfe3);
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .name-logo h2{
+        /* border-radius: 49% 51% 67% 33% / 76% 37% 63% 24%; */
+        color: black;
+        /* background-color: rgb(2, 2, 2); */
+        font-family: 'Ubuntu Condensed', sans-serif;
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+    .name-logo p{
+        font-size: 0.5rem;
+        display: flex;
+        /* align-items: center; */
+        justify-content: flex-start;
+        opacity: 0.75;
+    }
+    .menu ul{
+        color: black;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Playfair Display', serif;
+    }
+    .menu ul li {
+        margin-right: 20px;
+    }
+    .hire-button{
+        padding: 5px 5px ;
+        text-decoration: none;
+        background-color:rgb(128, 108, 99) ;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        color: white;
+        font-family: 'Playfair Display', serif;
+        
+    }
+    .hire-button:hover{
+        cursor: pointer;
+        background-color: rgb(7, 10, 12);
+    }
+}
+
+/* ***** about section css starts here****   */
+.about{
+    display: flex;
+   background-color: rgb(236, 236, 236);
+   height: 40rem;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   margin: 0 1rem;
+}
+.about-msg{
+    /* border: 2px solid red ; */
+    height: 25rem;
+    width: 20rem;
+    position: relative;
+}
+.about-msg p{
+    color: #666699;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.about-msg p::after{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 0.16rem;
+    background-color: #bda3a3;
+    left: 0;
+    top: 2rem;
+    margin-bottom: 20px;
+}
+.name-heading{
+    margin-top: 20%;
+    height: 90px;
+    display: flex;
+    text-align: center;
+    /* background-color: aqua; */
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 3rem;
+}
+.about-msg h3{
+    margin-top: 1.4rem;
+    color: #666699;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+.email-icon{
+    margin-top: 4rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.phone-icon{
+    position: absolute;
+    left: 65px;
+    margin-top: 0.5rem;
+    display: block;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.email-icon, a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.about-img{
+    /* border: 2px solid red ; */
+    height: 85%;
+    width: 50%;
+    display: flex;
+    /* justify-content:flex-end; */
+    /* align-items: center; */
+    border-radius: 40% 60% 87% 13% / 71% 57% 43% 29% ;
+    background-color: rgb(203, 211, 211);
+}
+.about-img img{
+    height: 70%;
+    width: 60%;
+    border-radius: 50%;
+}
+
+/* ****about section css ends  here****  */
+
+/* ****about-container section css starts  here****  */
+.about-container{
+    height: 30rem;
+    /* background-color: rgb(124, 88, 88); */
+    margin: 0 1rem;
+    display: flex;
+}
+.about-me-container-1{
+    /* background-color: rgb(216, 129, 15); */
+    height: 25rem;
+    /* margin-top: 10px; */
+    margin: 1% 10% 0% 10%;
+}
+.about-me-container-1 h4{
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    color: #666699;
+}
+.about-me-container-1 h4::after{
+    content: '';
+    position: absolute;
+    width: 3.5rem;
+    height: 4px;
+    background-color:#bda3a3;
+    top: 1.68rem;
+    left: 0;
+}
+.about-me-container-1 h1{
+    margin-top: 1rem;
+    font-family: 'Lobster Two', cursive;
+}
+
+.about-me-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+}
+.about-me-box{
+    /* margin-top: 1rem; */
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    /* border: 2px solid blue; */
+    font-family: 'Lobster Two', cursive;
+}
+#box-1 {
+    font-size: 2.5rem;
+    display: flex;
+    align-items:flex-start;
+}
+#box-2{
+    padding: 1rem;
+    color: #646060;
+}
+
+/* ****about-container section css ends  here****  */
+
+.skill{
+    height: 30rem;
+    background-color: azure;
+    margin: 0 1rem;
+}
+.skill-heading h4{
+    margin: 0% 10% 0% 10%;
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    color: #666699;
+}
+.skill-heading h4::after{
+    content: '';
+    position: absolute;
+    width: 3.5rem;
+    height: 4px;
+    background-color:#bda3a3;
+    top: 1.68rem;
+    left: 0;
+}
+.skill-container{
+    height: 20rem;
+    margin: 2% 10% 0% 10%;
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skill-box{
+    height: 10rem;
+    width: 8rem;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(#8a5959,black);
+    color: white;
+    border-radius: 10%;
+    box-shadow: 10px 10px 70px grey;
+}
+.skill-box:hover{
+    transform:scaleX(1);
+    box-shadow: none;
+    cursor: pointer;
+   
+
+}
+.skill-icon{
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* project css starts here  */
+.project{
+    height: 85rem;
+    background-color: azure;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+.project-container{
+    height: 80rem;
+    width:60%;
+    margin: 2% 10% 0% 10%;
+    background-color: aliceblue;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.project-heading h4{
+    margin: 0% 10% 0% 54%;
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    color: #666699;
+}
+.project-heading h4::after{
+    content:'';
+    position: absolute;
+    width: 3.5rem;
+    height: 4px;
+    background-color:#bda3a3;
+    top: 1.68rem;
+    left: 0;
+}
+.project-box{
+    height: 22rem;
+    width: 50rem;
+    /* border: 2px solid red; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(#cab8b8,#eee9e9);
+    color: rgb(7, 6, 6);
+    /* border-radius: 10%; */
+    box-shadow: 10px 10px 70px grey;
+    padding:10px 10px;
+    overflow: hidden;
+}
+.project-box h1{
+    font-family: 'Lobster Two', cursive;
+}
+.project-img{
+    height: 14rem;
+    width: auto;
+    overflow:auto
+}
+.project-box p{
+    color: #646060;
+    padding: 2px 0.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* project css ends here  */
+
+/* Resume css starts here  */
+.resume{
+    height: 10rem;
+    background-color: azure;
+    margin: 0 1rem;
+    
+}
+.resume-heading h4{
+    margin: 0% 10% 0% 10%;
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    color: #666699;
+}
+.resume-heading h4::after{
+    content:'';
+    position: absolute;
+    width: 3.5rem;
+    height: 4px;
+    background-color:#bda3a3;
+    top: 1.68rem;
+    left: 0;
+}
+.resume-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    margin: 2% 10% 0% 10%;
+    background:linear-gradient(#d2cece,#5b5959);
+    border-radius: 1rem;
+}
+.resume-button button{
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'ubuntu',cursive;
+    border: none;
+    box-shadow: 10px 10px 20px grey;
+    border-radius: 8px;
+}
+.resume-button button:hover{
+    cursor: pointer;
+    color: #0e0e20;
+    background-color: #cabebe;
+    
+}
+
+
+
+/* Resume css ends here  */
+
+/* contact section css starts here  */
+.contact{
+    height: 20rem;
+    margin: 0rem 1rem;
+    background-color: azure;
+    
+}
+.contact-heading h4{
+    margin: 0% 10% 0% 10%;
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    color: #666699;
+}
+.contact-heading h4::after{
+    content:'';
+    position: absolute;
+    width: 3.5rem;
+    height: 4px;
+    background-color:#bda3a3;
+    top: 1.68rem;
+    left: 0;
+}
+.contact-container{
+    height: 10rem;
+    background-color: aliceblue;
+    margin: 2% 10% 0% 10%;
+    display: inline-block;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.contact-detail{
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-detail a{
+    text-decoration: none;
+    /* color: white; */
+    
+}
+#email a{
+    font-size: 1.2rem;
+    color: black;
+}
+#email h2 i{
+    color: red;
+}
+#phone{
+    margin-right:4.7rem;
+}
+#phone  h2 i{
+   color: green;
+}
+
+#twitter h2 i{
+    color: #18baee;
+}
+/* contact section css ends here  */
+
+/* footer css starts here  */
+footer{
+    height: 3rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    font-family:'ubuntu', cursive;
+}
+/* footer css ends here  */
