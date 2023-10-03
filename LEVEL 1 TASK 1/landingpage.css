@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Abril Fatface', cursive; */
+
+}
+
+
+/* navbar css starts here  */
+.navbar {
+    height: 60px;
+    background-image: linear-gradient(rgb(247, 121, 92), rgb(0, 0, 0));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* max-width: 1200px; */
+    margin: 0rem 2rem;
+
+}
+
+.nav-logo {
+    height: 50px;
+    width: 120px;
+    z-index: 1;
+}
+
+.logo {
+    background: url('logo.png') no-repeat center center/cover;
+    height: 70px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    transition: transform 0.3s ease;
+}
+
+.menu .active,
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+
+/* .menu{
+    display: flex;
+    justify-content: space-evenly;
+} */
+.btn a {
+    text-decoration: none;
+
+}
+
+.btn button {
+    background-color: #f68f12;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.btn button:hover {
+    color: #2b2019;
+    cursor: pointer;
+}
+
+/* navbar css ends here  */
+
+/* hero section css starts here  */
+
+.hero-section {
+    /* background: url('bg2.jpg') no-repeat center center/cover; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.89;
+    z-index: -1;
+    flex-wrap: wrap;
+    margin: 0rem 2rem;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* line-height: 20px; */
+    margin-bottom: 150px;
+}
+
+.msg h1 {
+    color: #fffffe;
+    /* background-image: linear-gradient(rgb(247, 121, 92), rgb(0, 0, 0)); */
+    font-size: 3rem;
+    border-radius: 10px;
+}
+
+.msg p {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #fff6f6;
+    /* background-image: linear-gradient(rgb(247, 121, 92), rgb(0, 0, 0)); */
+}
+
+.order-button {
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: #f68f12;
+    border-radius: 10px;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.order-button:hover {
+    background-color: #ff6600;
+    cursor: pointer;
+}
+
+/* hero section css ends here  */
+
+/* food type css starts here  */
+
+.food-type {
+    /* margin-top: 10px; */
+    height: 12rem;
+    background-image: linear-gradient(to right, rgb(192, 240, 137), rgb(241, 183, 67));
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0rem 2rem;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    /* border: 2px solid blue; */
+    height: 10rem;
+    width: 16%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #330202;
+    flex-wrap: wrap;
+}
+
+h3 {
+    /* margin-top: 100px; */
+    font-weight: 900;
+}
+
+#box1 {
+    background: url('breakfast2.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+
+
+}
+
+#box2 {
+    background: url('lunch.png') no-repeat center center/cover;
+
+}
+
+#box3 {
+    background: url('dinner.png') no-repeat center center/cover;
+
+}
+
+/* food type css ends  here  */
+
+/* about css starts here  */
+.about {
+    height: 25rem;
+    /* border: 2px solid red; */
+    margin: 0rem 2rem;
+    background-color: #bfbab5;
+    padding: 10px;
+    color: rgb(3, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, rgb(236, 224, 212), rgb(236, 103, 38));
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.about-msg {
+    width: 50%;
+}
+
+.about-msg button {
+    background-color: #f68f12;
+    border: none;
+    border-radius: 10px;
+    color: rgb(5, 4, 4);
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: 'Righteous', cursive;
+}
+.about-msg button:hover{
+    background-color: #ff6600;
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.about-msg h1 {
+    font-size: 2rem;
+    position: relative;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.about-msg h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 14%;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #f5760e;
+
+}
+.about-msg p{
+    font-family: 'Courgette', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-img {
+    background: url('about-img.png') no-repeat center center/cover;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 25%;
+    /* border-radius:81% 100% 84% 36% / 86% 21% 80% 28%; */  
+}
+.about-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* about css ends here  */
+
+/* services css starts here  */
+.services-heading{
+    /* background-color: #ffcc00; */
+    background-image: linear-gradient(to right, rgb(142, 123, 103), rgb(236, 103, 38));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 2rem;
+    height: 4rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface', cursive;
+}
+.services{
+    position: relative;
+    height: 25rem;
+    margin: 0rem 2rem;
+    padding: 10px;
+    color: rgb(3, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffcc00;
+    flex-wrap: wrap;
+    overflow: auto;
+    
+}
+
+.service-box{
+    height: 18rem;
+    width: 15rem;
+    /* border: 2px solid green; */
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 3px 4px 10px brown;
+    /* border-radius:81% 70% 84% 36% / 86% 21% 80% 28%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    padding: 0px 10px;
+    background-color: azure;
+    
+}
+.service-box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.service-box h1{
+    font-family: 'Abril Fatface',cursive;
+    /* font-size: 10px; */
+}
+.service-box p{
+    font-family: 'Righteous', cursive;
+}
+.service-box img{
+    height: 4rem;
+    width: 5rem;
+    margin-bottom: 13px;
+}
+/* services css ends here  */
+
+/* footer css starts here  */
+
+footer{
+    background: #282727;
+    height: 3.8rem;
+    margin: 0rem 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+}
+
+/* footer css ends here  */
